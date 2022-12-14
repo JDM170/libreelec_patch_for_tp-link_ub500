@@ -17,11 +17,14 @@ static ssize_t hci_uart_tty_read(struct tty_struct *tty, struct file *file,
                  unsigned char __user *buf, size_t nr,
                  void **cookie, unsigned long offset)
 ```
-- ```make menuconfig``` -> ```Save``` -> ```Exit```
+// - ```make menuconfig``` -> ```Save``` -> ```Exit```
+- Узнаем имя конфигурации текущего ядра: ```ls -la /boot```
+- Копируем конфигурацию текущего ядра в папку с нашим ядром: ```cp /boot/config-5.15.0-43-generic .config```
 - Отключаем проверку сертификатов (не даст собрать ядро):
 ```
 scripts/config --disable SYSTEM_TRUSTED_KEYS
 scripts/config --disable SYSTEM_REVOCATION_KEYS
 ```
+- ```make oldconfig``` -> Жмем Enter пока не появится возможность снова вводить команды
 - Собираем ядро: ```make```
 - Собираем модули: ```make modules```
