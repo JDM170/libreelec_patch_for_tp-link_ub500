@@ -26,5 +26,5 @@ scripts/config --disable SYSTEM_TRUSTED_KEYS
 scripts/config --disable SYSTEM_REVOCATION_KEYS
 ```
 - ```make oldconfig``` -> Жмем Enter пока не появится возможность снова вводить команды
-- Собираем ядро: ```make```
-- Собираем модули: ```make modules```
+- Собираем ядро: ```make -j6```
+- Собираем модули: ```make modules -j6```
