@@ -17,11 +17,11 @@ static ssize_t hci_uart_tty_read(struct tty_struct *tty, struct file *file,
                  unsigned char __user *buf, size_t nr,
                  void **cookie, unsigned long offset)
 ```
+- ```make menuconfig``` -> ```Save``` -> ```Exit```
 - Отключаем проверку сертификатов (не даст собрать ядро):
 ```
 scripts/config --disable SYSTEM_TRUSTED_KEYS
 scripts/config --disable SYSTEM_REVOCATION_KEYS
 ```
-- ```make menuconfig``` -> ```Save```
-- Собираем ядро: ```make clean```
+- Собираем ядро: ```make```
 - Собираем модули: ```make modules```
