@@ -36,7 +36,8 @@ scripts/config --disable SYSTEM_REVOCATION_KEYS
 - Обновляем систему:
 ```sudo apt update
 sudo apt upgrade
-sudo apt install gcc make git unzip wget xz-utils bc gperf zip g++ xfonts-utils xsltproc openjdk-11-jre-headless texinfo bison flex```
+sudo apt install gcc make git unzip wget xz-utils bc gperf zip g++ xfonts-utils xsltproc openjdk-11-jre-headless texinfo bison flex
+```
 - Клонируем репо:
 ```git clone https://github.com/LibreELEC/LibreELEC.tv.git --branch libreelec-10.0```
 - Обновляем ```packages -> linux -> package.mk```:
