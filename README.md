@@ -48,6 +48,7 @@ pkg_sha256	1ba9bf57b6bf36d76447d5044b80b746cb5fd61d981c811603dc763b7789cea7
 pkg_version 	5.15.83
 pkg_sha256	40590843c04c85789105157f69efbd71a4efe87ae2568e40d1b7258c3f747ff3
 ```
+- Добавляем патчи для поддержки адаптера TP-Link UB500 в ```../packages/linux/patches/default```
 - Собираем: ```PROJECT=Allwinner ARCH=arm DEVICE=H3 UBOOT_SYSTEM=orangepi-pc make image -j6```
 - Очистка build-директорий: ```make clean```
 - Удалить все и ccache: ```make distclean```
