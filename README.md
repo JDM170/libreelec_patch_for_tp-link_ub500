@@ -40,7 +40,21 @@ sudo apt upgrade
 sudo apt install gcc make git unzip wget xz-utils bc gperf zip g++ xfonts-utils xsltproc openjdk-11-jre-headless texinfo bison flex
 ```
 - Клонируем репо: ```git clone https://github.com/LibreELEC/LibreELEC.tv.git --branch libreelec-10.0```
-- Обновляем ```../packages/linux/package.mk```:
+- Обновляем закидываем папку ```packages``` в директорию репозитория с заменой файлов
+- Собираем: ```PROJECT=Allwinner ARCH=arm DEVICE=H3 UBOOT_SYSTEM=orangepi-pc make image -j6```
+- Очистка build-директорий: ```make clean```
+- Удалить все и ccache: ```make distclean```
+
+---
+
+- Запускаем, настраиваем систему, включаем Samba
+- Заходим через Samba в папку ```Configfiles```
+- Закидываем папку ```firmware``` в текущую директорию
+- Перезапускаем систему
+
+---
+
+SHA256 linux-ядер:
 ```
 pkg_version	5.10.159
 pkg_sha256	1ba9bf57b6bf36d76447d5044b80b746cb5fd61d981c811603dc763b7789cea7
@@ -48,12 +62,3 @@ pkg_sha256	1ba9bf57b6bf36d76447d5044b80b746cb5fd61d981c811603dc763b7789cea7
 pkg_version 	5.15.83
 pkg_sha256	40590843c04c85789105157f69efbd71a4efe87ae2568e40d1b7258c3f747ff3
 ```
-- Добавляем патчи для поддержки адаптера TP-Link UB500 в ```../packages/linux/patches/default```
-- Собираем: ```PROJECT=Allwinner ARCH=arm DEVICE=H3 UBOOT_SYSTEM=orangepi-pc make image -j6```
-- Очистка build-директорий: ```make clean```
-- Удалить все и ccache: ```make distclean```
-
-- Запускаем, настраиваем систему, включаем Samba
-- Заходим через Samba в папку ```Configfiles```
-- Закидываем папку ```firmware``` в текущую директорию
-- Перезапускаем систему
