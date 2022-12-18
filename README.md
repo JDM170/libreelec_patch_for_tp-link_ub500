@@ -40,7 +40,7 @@ sudo apt upgrade
 sudo apt install gcc make git unzip wget xz-utils bc gperf zip g++ xfonts-utils xsltproc openjdk-11-jre-headless texinfo bison flex
 ```
 - Клонируем репо: ```git clone https://github.com/LibreELEC/LibreELEC.tv.git --branch libreelec-10.0```
-- Обновляем ```packages -> linux -> package.mk```:
+- Обновляем ```../packages/linux/package.mk```:
 ```
 pkg_version	5.10.159
 pkg_sha256	1ba9bf57b6bf36d76447d5044b80b746cb5fd61d981c811603dc763b7789cea7
