@@ -52,3 +52,8 @@ pkg_sha256	40590843c04c85789105157f69efbd71a4efe87ae2568e40d1b7258c3f747ff3
 - Собираем: ```PROJECT=Allwinner ARCH=arm DEVICE=H3 UBOOT_SYSTEM=orangepi-pc make image -j6```
 - Очистка build-директорий: ```make clean```
 - Удалить все и ccache: ```make distclean```
+
+- Запускаем, настраиваем систему, включаем Samba
+- Заходим через Samba в папку ```Configfiles```
+- Закидываем папку ```firmware``` в текущую директорию
+- Перезапускаем систему
