@@ -47,7 +47,7 @@ sudo apt install gcc make git unzip wget xz-utils bc gperf zip g++ xfonts-utils 
 
 ---
 
-- Запускаем, настраиваем систему, включаем Samba
+- Система должна быть настроена после первого запуска, в настройках включаем Samba
 - Заходим через Samba в папку ```Configfiles```
 - Закидываем папку ```firmware``` в текущую директорию
 - Перезапускаем систему
@@ -56,9 +56,9 @@ sudo apt install gcc make git unzip wget xz-utils bc gperf zip g++ xfonts-utils 
 
 SHA256 linux-ядер:
 ```
-pkg_version	5.10.159
-pkg_sha256	1ba9bf57b6bf36d76447d5044b80b746cb5fd61d981c811603dc763b7789cea7
+pkg_version		5.10.160
+pkg_sha256		30d5076acae863941045880c4c5c5109d26a54a932168fa1324237e8aeaa840b
 
-pkg_version 	5.15.83
-pkg_sha256	40590843c04c85789105157f69efbd71a4efe87ae2568e40d1b7258c3f747ff3
+pkg_version 	5.15.84
+pkg_sha256 		318dc30cb059c2e35b59652b166b39804bb3a941f11878aae6119019a04b8217
 ```
