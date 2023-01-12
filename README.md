@@ -56,9 +56,9 @@ sudo apt install gcc make git unzip wget xz-utils bc gperf zip g++ xfonts-utils 
 
 SHA256 linux-ядер:
 ```
-pkg_version		5.10.161
-pkg_sha256		7aaaf6d0bcd8a2cfa14ad75f02ca62bb2de08aad3bee3eff198de49ea5254079
+pkg_version		5.10.162
+pkg_sha256		2ec400fc50ffdfe4c836a3c02bf6e7aebcd7963dd2ac1425e6d41545c37dd217
 
-pkg_version 	5.15.85
-pkg_sha256 		2c0bae29fac98e0a9408914a4551b2971365ac0000351cb255d6bd9aa0849808
+pkg_version 	5.15.86
+pkg_sha256 		80fcd9efa443502de9e2750f6dfb59e8de43a5d87a6d2be09dca748d79b5f2ee
 ```
