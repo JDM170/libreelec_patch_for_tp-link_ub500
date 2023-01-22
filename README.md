@@ -35,5 +35,5 @@ pkg_sha256      e7311b874e014bb6d37c051319bd6a4a4e3d05a1c32546522deabbfd2d752fe8
 SHA256 linux-firmware:
 ```
 pkg_version     20230117
-pkg_sha256      b50362c9fedb05083a3efdf461888813ec654f1864a41ce73b5aa8feba1542a8
+pkg_sha256      909a3ee4a8ae88efee31cba7cc6b12231c6f0e0cb715d11b289007123a52e610
 ```
