@@ -23,8 +23,8 @@ sudo apt install gcc make git unzip wget xz-utils bc gperf zip g++ xfonts-utils 
 
 SHA256 linux-kernel:
 ```
-pkg_version     5.10.166
-pkg_sha256      0051a1780e5bda0efc68dafab7c728b8283d2b028fedb439418f478be7d3e1af
+pkg_version     5.10.167
+pkg_sha256      d807f97812e566410cd13b3170009e0d7552748d4f22d608ffd4dbd7f85bf9c6
 ```
 
 ---
